@@ -22,16 +22,16 @@ public class GenerateReport {
 
 
         // Print the report
-        System.out.println("Unique customers for each contractId:");
+        System.out.println("The number of unique customers for each contract Id:");
         uniqueCustomersByContract.forEach((k, v) -> System.out.println(k + ": " + v.size()));
 
-        System.out.println("\nUnique customers for each geozone:");
+        System.out.println("\nThe number of unique customers for each Geozone:");
         uniqueCustomersByGeozone.forEach((k, v) -> System.out.println(k + ": " + v.size()));
 
-        System.out.println("\nAverage build duration for each geozone:");
+        System.out.println("\nAverage build duration for each Geozone:");
         averageBuildDurationByGeozone.forEach((k, v) -> System.out.println(k + ": " + v));
 
-        System.out.println("\nList of unique customers for each geozone:");
+        System.out.println("\nList of unique customers for each Geozone:");
         uniqueCustomersByGeozone.forEach((k, v) -> System.out.println(k + ": " + v));
     }
 
